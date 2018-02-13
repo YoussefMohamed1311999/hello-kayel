@@ -1,3 +1,4 @@
+print ("each player chooses 1 or 2 numbers from the list on condition that they are adjacent. when there are no adjacent numbers players will enter 1 number. the player to remove the last number wins the game.")
 z=1
 p=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 while z==1:
@@ -25,10 +26,11 @@ while z==1:
    if y==x+1 or y==x-1:
      p[y]='-'
    else:
-       while y!=(x+1) or y!=(x-1):
+       while y!=(x+1) and y!=(x-1):
          print("enter a valid number")
          y=int(input())
- y='-'  
+         p[y]='-'
+ 
  if r=='n':
      pass
  p[x]='-'
